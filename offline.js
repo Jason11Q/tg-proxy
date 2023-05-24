@@ -19,9 +19,9 @@ app.use(
   createProxyMiddleware({
     target: 'http://172.16.2.65:3070',
     changeOrigin: true,
-    pathRewrite: {
-      '^/api': '',
-    },
+    // pathRewrite: {
+    //   '^/api': '',
+    // },
   })
 );
 
